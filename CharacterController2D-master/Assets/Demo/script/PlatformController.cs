@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
-public class MovingPlatform : MonoBehaviour {
-
-	// Use this for initialization
+public class PlatformController : RaycastContraller  {
+		
 	public LayerMask passengerMask;
 	public Vector3 move;
 
