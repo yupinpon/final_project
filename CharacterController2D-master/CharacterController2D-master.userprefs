@@ -1,8 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\PlatformController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Demo\script\PlayerTester.cs">
     <Files>
-      <File FileName="Assets\PlatformController.cs" Line="3" Column="25" />
+      <File FileName="Assets\Demo\script\PlatformController.cs" Line="21" Column="22" />
+      <File FileName="Assets\Demo\script\RaycastController.cs" Line="18" Column="1" />
+      <File FileName="Assets\Demo\script\PlayerTester.cs" Line="85" Column="2" />
+      <File FileName="Assets\Demo\script\CharacterController2D.cs" Line="145" Column="2" />
+      <File FileName="Assets\Scripts\Extensions\AnimatorExtensions.cs" Line="12" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
