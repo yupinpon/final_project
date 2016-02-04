@@ -21,7 +21,7 @@ public class Score : MonoBehaviour {
 
 	}
 	void OnCollisionEnter2D (Collision2D collision){
-		if (collision.gameObject.tag == "a1") {
+		if (collision.gameObject.tag == "grass1") {
 			score -= ballValue * 2;
 			UpdateScore();
 		}
