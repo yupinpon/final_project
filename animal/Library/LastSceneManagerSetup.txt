@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/2-hot.unity
+- path: D:/IT/4/term2/Project_animal/CharacterController2D-master/Assets/Demo/S2.unity
   isLoaded: 1
   isActive: 1
