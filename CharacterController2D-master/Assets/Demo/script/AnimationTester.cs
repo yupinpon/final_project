@@ -22,7 +22,7 @@ public class AnimationTester : MonoBehaviour
 		{
 			if( _controller.isGrounded && ( Input.GetKey( KeyCode.LeftArrow ) || Input.GetKey( KeyCode.RightArrow ) ) )
 			{
-				_animator.goToStateIfNotAlreadyThere( Animator.StringToHash( "Base Layer.Run" ) );
+				_animator.goToStateIfNotAlreadyThere( Animator.StringToHash( "Base Layer.walk" ) );
 			}
 			else if( _controller.isGrounded )
 			{
