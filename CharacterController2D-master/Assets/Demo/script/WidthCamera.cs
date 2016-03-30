@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 [ExecuteInEditMode]
 
-public class WidthCaera : MonoBehaviour {
+public class WidthCamera : MonoBehaviour {
 
 	public int targetWidthSize = 480;
 	public float pixelsToUnits = 100;
