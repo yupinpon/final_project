@@ -10,25 +10,25 @@ public class SmoothFollow : MonoBehaviour
 	public new Transform transform;
 	public Vector3 cameraOffset;
 	
-	private CharacterController2D _playerController;
+	private CharacterController2D Player;
 	
 	
 	void Awake()
 	{
 		transform = gameObject.transform;
-		_playerController = target.GetComponent<CharacterController2D>();
+		Player = target.GetComponent<CharacterController2D>();
 	}
 	
 	
 	public void LateUpdate()
 	{
-		if( _playerController == null )
+		if( Player == null )
 		{
 			transform.position = Vector3.Lerp( transform.position, target.position - cameraOffset, followSpeed * Time.deltaTime );
 			return;
 		}
 
-		if( _playerController.velocity.x > 0 )
+		if(Player.velocity.x > 0 )
 		{
 			transform.position = Vector3.Lerp( transform.position, target.position - cameraOffset, followSpeed * Time.deltaTime );
 		}
