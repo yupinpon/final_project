@@ -1,13 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Demo\script\RaycastController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Demo\script\Player.cs">
     <Files>
-      <File FileName="Assets\Demo\script\Player.cs" Line="34" Column="31" />
+      <File FileName="Assets\Demo\script\Player.cs" Line="12" Column="2" />
       <File FileName="Assets\Demo\script\PlayerController.cs" Line="1" Column="1" />
       <File FileName="Assets\Demo\script\SmoothFollow.cs" Line="1" Column="1" />
-      <File FileName="Assets\Demo\script\RaycastController.cs" Line="18" Column="1" />
-      <File FileName="Assets\Demo\script\PlayerPhysics.cs" Line="54" Column="6" />
-      <File FileName="Assets\Demo\script\Score.cs" Line="31" Column="30" />
+      <File FileName="Assets\Demo\script\RaycastController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Demo\script\PlayerPhysics.cs" Line="1" Column="1" />
+      <File FileName="Assets\Demo\script\Score.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
