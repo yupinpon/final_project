@@ -28,7 +28,7 @@ public class Score : MonoBehaviour {
 	}
 
 	void UpdateScore () {
-		scoreText.text = "Score: \n" + score;
+		scoreText.text = "Score 3 : " + score;
 
 	}
 }
