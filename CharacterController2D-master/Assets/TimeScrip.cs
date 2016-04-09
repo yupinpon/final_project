@@ -3,7 +3,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class TimeScrip : MonoBehaviour {
-	public float myTimer = 5;
+	public float myTimer = 10;
 	private Text timerText;
 
 	// Use this for initialization
@@ -14,7 +14,7 @@ public class TimeScrip : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		myTimer = Time.deltaTime;
+		myTimer -= Time.deltaTime;
 		timerText.text = "Time : " +myTimer.ToString("f0");
 		print (myTimer);
 
