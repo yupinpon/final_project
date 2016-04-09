@@ -9,13 +9,20 @@ public class Score : MonoBehaviour {
 	public int ballValue;
 
 	private int score;
+	private int count;
+
 
 	// Use this for initialization
 	void Start () {
 		score = 0;
 		UpdateScore();	
 		Wintext.text = "" ;
+
+		//count = 0;
+		//SetCountText ();
+		//winText.text= " ";
 	}
+
 
 
 	void OnTriggerEnter2D(){
@@ -36,6 +43,12 @@ public class Score : MonoBehaviour {
 		if (score >= 3) {
 			Wintext.text = "คุณชนะแล้ว";
 		}
-	
 	}
+	private IEnumerator Countdown(){
+		if (score >= 3) {
+			yield return new WaitForSeconds (3);
+			Application.LoadLevel ("S3");
+		}
+	}
+
 }
