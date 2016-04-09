@@ -18,8 +18,8 @@ public class Score : MonoBehaviour {
 		UpdateScore();	
 		Wintext.text = "" ;
 
-		//count = 0;
-		//SetCountText ();
+		count = 0;
+		//UpdateCount();
 		//winText.text= " ";
 	}
 
@@ -38,13 +38,13 @@ public class Score : MonoBehaviour {
 	}
 
 	void UpdateScore () {
-
+		StartCoroutine ("TimeScrip");
 		scoreText.text = "Score 3 : " + score;
 		if (score >= 3) {
 			Wintext.text = "คุณชนะแล้ว";
 		}
 	}
-	private IEnumerator Countdown(){
+	private IEnumerator TimeScrip(){
 		if (score >= 3) {
 			yield return new WaitForSeconds (3);
 			Application.LoadLevel ("S3");
