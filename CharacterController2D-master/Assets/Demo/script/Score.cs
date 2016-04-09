@@ -5,6 +5,7 @@ using System.Collections;
 public class Score : MonoBehaviour {
 
 	public Text scoreText;
+	public Text Wintext;
 	public int ballValue;
 
 	private int score;
@@ -13,7 +14,9 @@ public class Score : MonoBehaviour {
 	void Start () {
 		score = 0;
 		UpdateScore();	
+		Wintext.text = "" ;
 	}
+
 
 	void OnTriggerEnter2D(){
 		score += ballValue;
@@ -28,7 +31,11 @@ public class Score : MonoBehaviour {
 	}
 
 	void UpdateScore () {
-		scoreText.text = "Score 3 : " + score;
 
+		scoreText.text = "Score 3 : " + score;
+		if (score >= 3) {
+			Wintext.text = "คุณชนะแล้ว";
+		}
+	
 	}
 }

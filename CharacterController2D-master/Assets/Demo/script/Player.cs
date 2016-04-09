@@ -13,6 +13,7 @@ public class Player : MonoBehaviour {
 	public Transform endPos;
 	public LayerMask groundLayer;
 
+
 	// Use this for initialization
 	void Start () {
 		_myRigidbody= this.GetComponent<Rigidbody2D>();
