@@ -1,8 +1,8 @@
 ﻿
-using UnityEngine.Texture;
+//using UnityEngine.Texture2D;
 
 var guiSkin : GUISkin;
-var blackTexture : Textture2D;
+var blackTexture : UnityEngine.Texture2D;
 
 var healthPoint :float;
 var healthRegen : float;
@@ -13,8 +13,8 @@ function Start () {
 }
 
 function Update () {
-	if(healthRegenEnabled == true && healthPoint < 100){
-		healthPoint -= healthRegen * time.deltatime;
+	if(healthRegentEnabled == true && healthPoint < 100){
+		healthPoint -= healthRegen * Time.deltatime;
 	}
 	if (healthPoint >100){
 		healthPoint = 100;
@@ -25,6 +25,6 @@ function Update () {
 }
 
 function onGUI(){
-	GUI.skin = guiSkin;
-	GUI.Label(new rect (Screen.width -130, Screen.hight-90,200,50),healthPoints.toString);
+	GUI.Skin = guiSkin;
+	GUI.Label(new Rect (Screen.width -130, Screen.hight-90,200,50),healthPoint.toString);
 }

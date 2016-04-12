@@ -5,13 +5,13 @@ var damageTimer : float;
 var healthScript : Health;
 
 function Update () {
-	if (healthScript.healthPoints <=0){
-	Destroy (gameObjet);
+	if (healthScript.healthPoint <=0){
+	Destroy (gameObject);
 	}
 
 }
 function OnTriggerEnter (other : Collider){
 	if (other.tag == "Player"){
-		healthScript.healthPoints -= damage;
+		healthScript.healthPoint -= damage;
 	}
 }
