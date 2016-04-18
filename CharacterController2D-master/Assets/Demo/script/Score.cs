@@ -46,8 +46,8 @@ public class Score : MonoBehaviour {
 	}
 	private IEnumerator TimeScrip(){
 		if (score >= 3) {
-			yield return new WaitForSeconds (3);
-			Application.LoadLevel ("S3");
+			yield return new WaitForSeconds (1);
+			Application.LoadLevel ("1");
 		}
 	}
 
