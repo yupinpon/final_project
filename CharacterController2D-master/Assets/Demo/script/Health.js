@@ -15,6 +15,7 @@ function Start () {
 function Update () {
 	if(healthRegentEnabled == true && healthPoint < 100){
 		healthPoint -= healthRegen * Time.deltatime;
+
 	}
 	if (healthPoint >100){
 		healthPoint = 100;
@@ -28,3 +29,4 @@ function onGUI(){
 	GUI.Skin = guiSkin;
 	GUI.Label(new Rect (Screen.width -130, Screen.hight-90,200,50),healthPoint.toString);
 }
+
