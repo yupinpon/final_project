@@ -23,15 +23,27 @@ public class Score : MonoBehaviour {
 		//winText.text= " ";
 	}
 
-	void OnTriggerEnter2D(){
-		
-			score -=  ballValue ;
+
+
+	void OnTriggerEnter2D (Collider2D other){
+		if (other.tag == "meat") {
+			score += ballValue;
 			UpdateScore ();	
+		//	Destroy (other.gameObject);
 		}
+} 
 
 
-	
-/*
+	void OnTriggerEnter2D2 (Collider2D other){
+		if (other.tag == "grass") {
+			score -= ballValue;
+			UpdateScore ();	
+			//	Destroy (other.gameObject);
+		}
+	} 
+		
+
+	/*
 	void OnTriggerEnter2D(Collision2D collision){
 		if (collision.gameObject.tag == "meat") {
 			score +=  ballValue ;
@@ -40,39 +52,34 @@ public class Score : MonoBehaviour {
 
 	} */
 		
-	/*
-	void OnCollisionEnter2D (Collision2D collision){
-		if (collision.gameObject.tag == "meat") {
-			score -= ballValue * 2;
-			UpdateScore ();
-		}
-	}
-
-	void OnCollisionEnter2D2 (Collision2D collision){
-		if (collision.gameObject.tag == "grass") {
-			score -= ballValue - 2;
-			UpdateScore ();
-		}
-	}
-		*/
 
 	void UpdateScore () {
 		StartCoroutine ("TimeScrip");
 		scoreText.text = "Score 3 : " + score;
-		if (score >= 3) {
-			Wintext.text = "คุณชนะแล้ว";
+
 		}
-		if (score <= -1 ) {
-			Wintext.text = "คุณแพ้แล้ว";
-		}
-	}
+
+
+
 
 
 	private IEnumerator TimeScrip(){
-		if (score >= 3) {
-			yield return new WaitForSeconds (1);
+			if (score >= 3) {
+				Wintext.text = "คุณชนะแล้ว";
+			yield return new WaitForSeconds (2);
 			Application.LoadLevel ("S3");
 		}
+
+		if (score <= -1) {
+			if (score <= -1 ) {
+				Wintext.text = "คุณแพ้แล้ว";
+			}
+			yield return new WaitForSeconds (2);
+			Application.LoadLevel ("Game Over");
+		}
 	}
+
+
+
 
 }
