@@ -1,10 +1,13 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Demo\script\TimeScrip.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Demo\script\Score.cs">
     <Files>
-      <File FileName="Assets\Demo\script\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\Demo\script\TimeScrip.cs" Line="16" Column="18" />
-      <File FileName="Assets\Demo\script\Score.cs" Line="50" Column="29" />
+      <File FileName="Assets\Demo\script\Health.js" Line="17" Column="1" />
+      <File FileName="Assets\Demo\script\Player.cs" Line="1" Column="3" />
+      <File FileName="Assets\Demo\script\TimeScrip.cs" Line="25" Column="3" />
+      <File FileName="Assets\Demo\script\Damage.js" Line="12" Column="2" />
+      <File FileName="Assets\new.js" Line="1" Column="1" />
+      <File FileName="Assets\Demo\script\Score.cs" Line="30" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

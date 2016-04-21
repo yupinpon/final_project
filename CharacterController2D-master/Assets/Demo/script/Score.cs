@@ -23,19 +23,38 @@ public class Score : MonoBehaviour {
 		//winText.text= " ";
 	}
 
-
-
 	void OnTriggerEnter2D(){
-		score += ballValue;
-		UpdateScore();
+		
+			score -=  ballValue ;
+			UpdateScore ();	
+		}
 
-	}
+
+	
+/*
+	void OnTriggerEnter2D(Collision2D collision){
+		if (collision.gameObject.tag == "meat") {
+			score +=  ballValue ;
+			UpdateScore ();	
+		}
+
+	} */
+		
+	/*
 	void OnCollisionEnter2D (Collision2D collision){
 		if (collision.gameObject.tag == "meat") {
 			score -= ballValue * 2;
-			UpdateScore();
+			UpdateScore ();
 		}
 	}
+
+	void OnCollisionEnter2D2 (Collision2D collision){
+		if (collision.gameObject.tag == "grass") {
+			score -= ballValue - 2;
+			UpdateScore ();
+		}
+	}
+		*/
 
 	void UpdateScore () {
 		StartCoroutine ("TimeScrip");
@@ -43,11 +62,16 @@ public class Score : MonoBehaviour {
 		if (score >= 3) {
 			Wintext.text = "คุณชนะแล้ว";
 		}
+		if (score <= -1 ) {
+			Wintext.text = "คุณแพ้แล้ว";
+		}
 	}
+
+
 	private IEnumerator TimeScrip(){
 		if (score >= 3) {
 			yield return new WaitForSeconds (1);
-			Application.LoadLevel ("1");
+			Application.LoadLevel ("S3");
 		}
 	}
 
