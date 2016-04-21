@@ -31,26 +31,16 @@ public class Score : MonoBehaviour {
 			UpdateScore ();	
 		//	Destroy (other.gameObject);
 		}
-} 
-
-
-	void OnTriggerEnter2D2 (Collider2D other){
 		if (other.tag == "grass") {
 			score -= ballValue;
 			UpdateScore ();	
 			//	Destroy (other.gameObject);
 		}
-	} 
-		
 
-	/*
-	void OnTriggerEnter2D(Collision2D collision){
-		if (collision.gameObject.tag == "meat") {
-			score +=  ballValue ;
-			UpdateScore ();	
-		}
+} 
 
-	} */
+
+
 		
 
 	void UpdateScore () {
@@ -69,17 +59,16 @@ public class Score : MonoBehaviour {
 			yield return new WaitForSeconds (2);
 			Application.LoadLevel ("S3");
 		}
-
+			
 		if (score <= -1) {
-			if (score <= -1 ) {
-				Wintext.text = "คุณแพ้แล้ว";
-			}
+			Wintext.text = "คุณแพ้แล้ว";
+
 			yield return new WaitForSeconds (2);
 			Application.LoadLevel ("Game Over");
+		}
 		}
 	}
 
 
 
 
-}
