@@ -6,7 +6,10 @@ public class Score : MonoBehaviour {
 
 	public Text scoreText;
 	public Text Wintext;
+	public Text HeartText;
+
 	public int ballValue;
+	public int heart;
 
 	private int score;
 	private int count;
@@ -17,6 +20,7 @@ public class Score : MonoBehaviour {
 		score = 0;
 		UpdateScore();	
 		Wintext.text = "" ;
+		heart = 100;
 
 		count = 0;
 		//UpdateCount();
@@ -38,8 +42,14 @@ public class Score : MonoBehaviour {
 		}
 
 } 
+	void OnCollisionEnter2D(Collision2D coll) {
+		if (coll.gameObject.tag == "cactus")
+			heart -= 10;
+	}
 
-
+	void Update(){
+		HeartText.text = "Heart : " +heart.ToString();
+	}
 
 		
 

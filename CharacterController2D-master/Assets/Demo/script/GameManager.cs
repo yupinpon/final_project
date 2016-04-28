@@ -13,6 +13,6 @@ public class GameManager : MonoBehaviour {
 	
 	// Spawn player
 	private void SpawnPlayer() {
-		cam.SetTarget((Instantiate(player,Vector3.zero,Quaternion.identity) as GameObject).transform);
+	//	cam.GameObject((Instantiate(player,Vector3.zero,Quaternion.identity) as GameObject).transform);
 	}
 }

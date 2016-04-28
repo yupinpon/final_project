@@ -16,7 +16,6 @@ public class TimeScrip : MonoBehaviour {
 	void Update () {
 		myTimer -= Time.deltaTime;
 		timerText.text = "Time : " +myTimer.ToString("f0");
-		print (myTimer);
 
 		if (myTimer <= 0){
 			Application.LoadLevel("Game over");
