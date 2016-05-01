@@ -43,8 +43,15 @@ public class Score : MonoBehaviour {
 
 } 
 	void OnCollisionEnter2D(Collision2D coll) {
-		if (coll.gameObject.tag == "cactus")
+		if (coll.gameObject.tag == "cactus") {
 			heart -= 10;
+		}
+
+		if(heart <= 0 ){
+			heart = 0;
+			Application.LoadLevel ("Game Over");
+		}
+
 	}
 
 	void Update(){
