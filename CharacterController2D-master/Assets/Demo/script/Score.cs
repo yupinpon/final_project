@@ -74,7 +74,7 @@ public class Score : MonoBehaviour {
 			if (score >= 3) {
 				Wintext.text = "คุณชนะแล้ว";
 			yield return new WaitForSeconds (2);
-			Application.LoadLevel ("S3");
+			Application.LoadLevel ("Scente3Test");
 		}
 			
 		if (score <= -1) {
