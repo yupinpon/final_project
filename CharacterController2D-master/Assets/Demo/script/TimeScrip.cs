@@ -18,7 +18,7 @@ public class TimeScrip : MonoBehaviour {
 		timerText.text = "Time : " +myTimer.ToString("f0");
 
 		if (myTimer <= 0){
-			Application.LoadLevel("Game over");
+			Application.LoadLevel("GameOver");
 		}
 	
 	}
