@@ -58,6 +58,9 @@ public class Score : MonoBehaviour {
 			Application.LoadLevel ("GameOver");
 		}
 
+		if (coll.gameObject.tag == "Fox") {
+			heart -= 5;
+		}
 	}
 
 	void Update(){
