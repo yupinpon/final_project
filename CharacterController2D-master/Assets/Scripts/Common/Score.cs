@@ -50,7 +50,7 @@ public class Score : MonoBehaviour {
 
 		if(heart <= 0 ){
 			heart = 0;
-			Application.LoadLevel ("Game Over");
+			Application.LoadLevel ("GameOver");
 		}
 
 	}
@@ -82,7 +82,7 @@ public class Score : MonoBehaviour {
 			Wintext.text = "คุณแพ้แล้ว";
 
 			yield return new WaitForSeconds (2);
-			Application.LoadLevel ("Game Over");
+			Application.LoadLevel ("GameOver");
 		}
 		}
 	}
