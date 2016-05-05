@@ -10,10 +10,11 @@ public class Score : MonoBehaviour {
 
 	public int ballValue;
 	public int heart;
+	public int winScore;
+	public string scene;
 
 	private int score;
 	private int count;
-
 
 
 	// Use this for initialization
@@ -34,7 +35,7 @@ public class Score : MonoBehaviour {
 		if (other.tag == "meat") {
 			score += ballValue;
 			UpdateScore ();	
-		//	Destroy (other.gameObject);
+			//	Destroy (other.gameObject);
 		}
 		if (other.tag == "grass") {
 			score -= ballValue;
@@ -42,7 +43,7 @@ public class Score : MonoBehaviour {
 			//	Destroy (other.gameObject);
 		}
 
-} 
+	} 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "cactus") {
 			heart -= 10;
@@ -59,34 +60,30 @@ public class Score : MonoBehaviour {
 		HeartText.text = "Heart : " +heart.ToString();
 	}
 
-		
+
 
 	void UpdateScore () {
 		StartCoroutine ("TimeScrip");
 		scoreText.text = "Score 3 : " + score;
 
-		}
+	}
 
 
 
 
 
 	private IEnumerator TimeScrip(){
-			if (score >= 3) {
-				Wintext.text = "คุณชนะแล้ว";
+		if (score >= winScore) {
+			Wintext.text = "คุณชนะแล้ว";
 			yield return new WaitForSeconds (2);
-			Application.LoadLevel ("Scene3");
+			Application.LoadLevel (scene);
 		}
-			
+
 		if (score <= -1) {
 			Wintext.text = "คุณแพ้แล้ว";
 
 			yield return new WaitForSeconds (2);
 			Application.LoadLevel ("GameOver");
 		}
-		}
-	}
-
-
-
-
+	}  
+}
