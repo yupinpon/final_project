@@ -1,9 +1,9 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scene3/Scripts/ScoreS3.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Demo/script/WidthCamera.cs">
     <Files>
-      <File FileName="Assets/Scripts/Common/Score.cs" Line="65" Column="32" />
       <File FileName="Assets/Scene3/Scripts/ScoreS3.cs" Line="78" Column="40" />
+      <File FileName="Assets/Demo/script/WidthCamera.cs" Line="13" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
