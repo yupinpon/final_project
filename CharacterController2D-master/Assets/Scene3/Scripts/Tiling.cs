@@ -3,7 +3,7 @@ using System.Collections;
 
 [RequireComponent (typeof (SpriteRenderer))]
 
-public class Tilingg : MonoBehaviour {
+public class Tiling : MonoBehaviour {
 
 	public int offsetX = 2;
 	public bool hasARightBuddy = false;
