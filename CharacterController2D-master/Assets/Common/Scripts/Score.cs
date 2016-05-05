@@ -54,6 +54,10 @@ public class Score : MonoBehaviour {
 			Application.LoadLevel ("GameOver");
 		}
 
+		if (coll.gameObject.tag == "DeadLine") {
+			Application.LoadLevel ("GameOver");
+		}
+
 	}
 
 	void Update(){
