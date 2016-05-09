@@ -39,7 +39,7 @@ public class ScoreScence5 : MonoBehaviour {
 
 
 		void UpdateScore () {
-			StartCoroutine ("TimeScrip");
+	//	StartCoroutine ("TimeScrip");
 			scoreText.text = "Score "+winScore+" : " + score;
 
 		}
