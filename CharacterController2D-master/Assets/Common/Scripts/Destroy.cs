@@ -9,5 +9,8 @@ public class Destroy : MonoBehaviour {
 		if (other.tag == "meat") {
 			Destroy (other.gameObject);
 		}
+		if (other.tag == "grass") {
+			Destroy (other.gameObject);
+		}
 		}
 	}
