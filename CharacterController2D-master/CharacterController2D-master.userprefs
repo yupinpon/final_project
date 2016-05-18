@@ -1,15 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\2Choose\Scripts\LoadScene.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\1MainMenu\Scripts\LoadMain.cs">
     <Files>
-      <File FileName="Assets\Common\Scripts\Score.cs" Line="35" Column="9" />
-      <File FileName="Assets\2Choose\Scripts\LoadHowToPlay.cs" Line="1" Column="1" />
+      <File FileName="Assets\Common\Scripts\Score.cs" Line="1" Column="1" />
       <File FileName="Assets\2Choose\Scripts\LoadScene.cs" Line="14" Column="1" />
       <File FileName="Assets\Common\Scripts\TimeScrip.cs" Line="1" Column="1" />
       <File FileName="Assets\Scene5\Scripts\TimeScene5.cs" Line="1" Column="1" />
       <File FileName="Assets\2Choose\Scripts\Provider.cs" Line="1" Column="1" />
       <File FileName="Assets\2Choose\Scripts\Back.cs" Line="1" Column="1" />
-      <File FileName="Assets\1MainMenu\Scripts\LoadMain.cs" Line="1" Column="1" />
+      <File FileName="Assets\1MainMenu\Scripts\LoadMain.cs" Line="13" Column="1" />
+      <File FileName="Assets\SceneGameOver\Scripts\LoadGameOver.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -12,7 +12,6 @@ public class Score : MonoBehaviour {
 	public int heart;
 	public int winScore;
 	public string scene;
-//	public void Sound;
 
 	private int score;
 	private int count;
@@ -34,7 +33,6 @@ public class Score : MonoBehaviour {
 
 	void OnTriggerEnter2D (Collider2D other){
 		if (other.tag == "meat") {
-			//Sound.SetActive (true);
 			score += ballValue;
 			UpdateScore ();	
 			//	Destroy (other.gameObject);
