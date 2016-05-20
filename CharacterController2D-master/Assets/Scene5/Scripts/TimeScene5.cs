@@ -18,7 +18,7 @@ public class TimeScene5 : MonoBehaviour {
 		timerText.text = "Time : " +myTimer.ToString("f0");
 
 		if (myTimer <= 0){
-			Application.LoadLevel("YouScore");
+			Application.LoadLevel("ScoreSum");
 		}
 
 	}

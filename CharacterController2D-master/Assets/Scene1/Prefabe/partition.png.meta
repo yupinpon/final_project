@@ -1,0 +1,157 @@
+fileFormatVersion: 2
+guid: a11b936c23fea944d93efecf65130f62
+timeCreated: 1462878606
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: partition_5
+    21300002: partition_6
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: partition_5
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 1027
+        width: 812
+        height: 241
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 281.9407, y: -64.13019}
+        - {x: 282.9407, y: -50.130188}
+        - {x: 283.9407, y: -43.130188}
+        - {x: 284.9407, y: -28.130188}
+        - {x: 284.9407, y: 38.869812}
+        - {x: 283.9407, y: 45.869812}
+        - {x: 281.9407, y: 53.869812}
+        - {x: 274.9407, y: 69.86981}
+        - {x: 271.9407, y: 73.86981}
+        - {x: 259.9407, y: 85.86981}
+        - {x: -248.0593, y: 85.86981}
+        - {x: -251.0593, y: 83.86981}
+        - {x: -259.0593, y: 71.86981}
+        - {x: -270.0593, y: 49.869812}
+        - {x: -275.0593, y: 37.869812}
+        - {x: -281.0593, y: 19.869812}
+        - {x: -283.0593, y: 17.869812}
+        - {x: -283.0593, y: 1.869812}
+        - {x: -279.0593, y: -23.130188}
+        - {x: -278.0593, y: -34.130188}
+        - {x: -275.0593, y: -44.130188}
+        - {x: -273.0593, y: -53.130188}
+        - {x: -270.0593, y: -63.130188}
+        - {x: -266.0593, y: -76.13019}
+        - {x: -262.0593, y: -81.13019}
+        - {x: -149.0593, y: -81.13019}
+        - {x: -147.0593, y: -83.13019}
+        - {x: -145.0593, y: -84.13019}
+        - {x: -135.0593, y: -84.13019}
+        - {x: -132.0593, y: -81.13019}
+        - {x: 277.9407, y: -81.13019}
+        - {x: 279.9407, y: -79.13019}
+    - name: partition_6
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 904
+        width: 739
+        height: 410
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 63.197998, y: 143.513}
+        - {x: 59.197998, y: 142.513}
+        - {x: 53.197998, y: 136.513}
+        - {x: 49.197998, y: 129.513}
+        - {x: 41.197998, y: 108.513}
+        - {x: 27.197998, y: 94.513}
+        - {x: 23.197998, y: 91.513}
+        - {x: 10.197998, y: 85.513}
+        - {x: 2.197998, y: 82.513}
+        - {x: -4.802002, y: 80.513}
+        - {x: -20.802002, y: 77.513}
+        - {x: -28.802002, y: 76.513}
+        - {x: -45.802002, y: 75.513}
+        - {x: -61.802002, y: 73.513}
+        - {x: -69.802, y: 71.513}
+        - {x: -77.802, y: 68.513}
+        - {x: -86.802, y: 64.513}
+        - {x: -94.802, y: 57.513}
+        - {x: -99.802, y: 50.513}
+        - {x: -103.802, y: 40.513}
+        - {x: -106.802, y: 28.513}
+        - {x: -108.802, y: 15.5130005}
+        - {x: -109.802, y: 3.5130005}
+        - {x: -114.802, y: -2.4869995}
+        - {x: -115.802, y: -8.4869995}
+        - {x: -122.802, y: -22.487}
+        - {x: -138.802, y: -37.487}
+        - {x: -151.802, y: -44.487}
+        - {x: -154.802, y: -44.487}
+        - {x: -165.802, y: -47.487}
+        - {x: -175.802, y: -49.487}
+        - {x: -179.802, y: -50.487}
+        - {x: -189.802, y: -51.487}
+        - {x: -203.802, y: -53.487}
+        - {x: -213.802, y: -54.487}
+        - {x: -222.802, y: -58.487}
+        - {x: -232.802, y: -62.487}
+        - {x: -238.802, y: -66.487}
+        - {x: -249.802, y: -76.487}
+        - {x: -255.802, y: -84.487}
+        - {x: -257.802, y: -88.487}
+        - {x: -257.802, y: -143.487}
+        - {x: 259.198, y: -143.487}
+        - {x: 259.198, y: 143.513}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,7 +14,7 @@ function Start () {
 function Update () {
     //text.heartText.text = "Heart AAAA";
 	if(healthRegentEnabled == true && healthPoint < 100){
-		healthPoint -= healthRegen * Time.deltatime;
+		healthPoint -= healthRegen * Time.deltaTime;
 
 	}
 	if (healthPoint >100) {
@@ -22,15 +22,15 @@ function Update () {
 	}
 	//UpdateHealth();
 	if(healthPoint <=0) {
-	Application.LoadLavel("Game Over");
-	healthPoins = 0;
-	healthRegenEnabled = false;
+	Application.LoadLevel("Game Over");
+	healthPoint = 0;
+	healthRegentEnabled = false;
 	}
 }
 
 function onGUI(){
-	GUI.Skin = guiSkin;
-	GUI.Label(new Rect (Screen.width -130, Screen.hight-90,200,50),healthPoint.ToString("F0"));
+	GUI.skin = guiSkin;
+	GUI.Label(new Rect (Screen.width -130, Screen.height-90,200,50),healthPoint.ToString("F0"));
 }
 
 	//function UpdateHealth() {

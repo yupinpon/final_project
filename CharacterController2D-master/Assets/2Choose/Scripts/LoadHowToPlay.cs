@@ -3,11 +3,10 @@ using System.Collections;
 
 public class LoadHowToPlay : MonoBehaviour {
 
-	// Use this for initialization
-	public void ChangeScene()
 
+	public void ChangeScene(int sceneToChangeTo)
 	{	
-		Application.LoadLevel("HowToPlay");
+		Application.LoadLevel(sceneToChangeTo);
 	}
 }
 
