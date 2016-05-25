@@ -6,7 +6,7 @@ public class LoadHowToPlay : MonoBehaviour {
 
 	public void ChangeScene(int sceneToChangeTo)
 	{	
-		Application.LoadLevel(sceneToChangeTo);
+		Application.LoadLevel("HowToPlay");
 	}
 }
 
