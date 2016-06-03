@@ -1,11 +1,11 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\2Choose\Scripts\LoadHowToPlay.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scene5\Scripts\ScoreScence5.cs">
     <Files>
-      <File FileName="Assets\Common\Scripts\Parallaxing.cs" Line="34" Column="1" />
-      <File FileName="Assets\2Choose\Scripts\LoadHowToPlay.cs" Line="9" Column="35" />
+      <File FileName="Assets\Scene5\Scripts\ScoreScence5.cs" Line="42" Column="32" />
+      <File FileName="Assets\Common\Scripts\Parallaxing.cs" Line="1" Column="1" />
+      <File FileName="Assets\2Choose\Scripts\LoadHowToPlay.cs" Line="1" Column="1" />
       <File FileName="Assets\Common\Scripts\Player.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scene5\Scripts\ScoreScence5.cs" Line="1" Column="1" />
       <File FileName="Assets\Scene5\Scripts\TimeScene5.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
