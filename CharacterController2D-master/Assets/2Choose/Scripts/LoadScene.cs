@@ -8,7 +8,7 @@ public class LoadScene : MonoBehaviour {
 	public void ChangeScene()
 
 	{	
-		Application.LoadLevel("Scene1");
+		Application.LoadLevel("Scene1_Rabbit");
 	}
 }
 
