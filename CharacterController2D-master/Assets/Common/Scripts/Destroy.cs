@@ -12,5 +12,8 @@ public class Destroy : MonoBehaviour {
 		if (other.tag == "grass") {
 			Destroy (other.gameObject);
 		}
+		if (other.tag == "Score") {
+			Destroy (other.gameObject);
+		}
 		}
 	}

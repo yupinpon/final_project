@@ -24,7 +24,7 @@ public class TimeScene5 : MonoBehaviour {
 
 		if (myTimer <= 0){
 			GameOver.gameObject.SetActive (true);
-			//Score.gameObject.gameObject.SetActive (true);
+//			Score.gameObject.gameObject.SetActive (true);
 		}
 
 	}
