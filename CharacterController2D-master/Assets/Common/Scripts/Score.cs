@@ -13,6 +13,7 @@ public class Score : MonoBehaviour {
 	public int winScore;
 	public string scene;
 
+
 	private int score;
 	private int count;
 
@@ -72,7 +73,7 @@ public class Score : MonoBehaviour {
 	void UpdateScore () {
 		StartCoroutine ("TimeScrip");
 		scoreText.text = "Score "+winScore+" : " + score;
-
+	
 	}
 
 

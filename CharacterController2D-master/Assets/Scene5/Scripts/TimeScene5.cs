@@ -4,7 +4,12 @@ using UnityEngine.UI;
 
 public class TimeScene5 : MonoBehaviour {
 	public float myTimer = 10;
+	public GameObject GameOver;
+	public GameObject Score;
+
 	private Text timerText;
+
+
 
 	// Use this for initialization
 	void Start () {
@@ -18,8 +23,10 @@ public class TimeScene5 : MonoBehaviour {
 		timerText.text = "Time : " +myTimer.ToString("f0");
 
 		if (myTimer <= 0){
-			Application.LoadLevel("ScoreSum");
+			GameOver.gameObject.SetActive (true);
+			//Score.gameObject.gameObject.SetActive (true);
 		}
 
 	}
 }
+

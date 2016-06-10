@@ -4,44 +4,24 @@ using System.Collections;
 
 public class ScoreScence5 : MonoBehaviour {
 
-	public int ballValue;
 	public Text scoreText;
-	public Text Wintext;
-	public int winScore;
-	public string scene;
+	public Text GameOverText;
 
-	private int score;
-	private int count;
+	private int score =0 ;
 
-	// Use this for initialization
-	void Start () {
-		score = 0;
-		UpdateScore();	
-		Wintext.text = "" ;
-
-		count = 0;
-	
-	}
-
-	void OnTriggerEnter2D (Collider2D other){
-		if (other.tag == "meat") {
-			score += ballValue;
-			UpdateScore ();	
-			//	Destroy (other.gameObject);
-		}
-		if (other.tag == "grass") {
-			score -= ballValue;
-			UpdateScore ();	
-			//	Destroy (other.gameObject);
+	public void OnTriggerEnter2D(Collider2D collider)
+	{
+		if(collider.gameObject.tag == "Score")
+		{
+			score++;
+			scoreText.text = score.ToString();
+			GameOverText.text = "Score  : " + score;
 		}
 
 	}
-
-
-		void UpdateScore () {
-	//	StartCoroutine ("TimeScrip");
-			scoreText.text = "Score : "+ score;
-
-		}
-
 }
+
+
+
+		
+
