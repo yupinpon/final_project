@@ -65,7 +65,7 @@ public class Score : MonoBehaviour {
 	}
 
 	void Update(){
-		HeartText.text = "Heart : " +heart.ToString();
+		HeartText.text = " " +heart.ToString();
 	}
 
 

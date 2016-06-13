@@ -15,7 +15,7 @@ public class TimeScrip : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		myTimer -= Time.deltaTime;
-		timerText.text = "Time : " +myTimer.ToString("f0");
+		timerText.text = " " +myTimer.ToString("f0");
 
 		if (myTimer <= 0){
 			Application.LoadLevel("GameOver");

@@ -16,7 +16,7 @@ public class ScoreScence5 : MonoBehaviour {
 		{
 			score++;
 			scoreText.text = score.ToString();
-			GameOverText.text = "Score  : " + score;
+			GameOverText.text = "Score : " + score;
 		}
 
 	}
