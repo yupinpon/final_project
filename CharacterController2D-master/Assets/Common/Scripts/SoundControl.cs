@@ -7,7 +7,7 @@ public class SoundControl : MonoBehaviour {
 	public AudioSource DeathSong;
 	public AudioSource TrueSong;
 	public AudioSource FalseSong;
-	public AudioSource BoomSong;
+	public AudioSource ButtonSong;
 
 	public static int itemCheckSound = 0;
 	public static bool boomCheck = false;
