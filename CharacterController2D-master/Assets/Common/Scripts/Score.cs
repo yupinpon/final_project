@@ -12,7 +12,9 @@ public class Score : MonoBehaviour {
 	public int heart;
 	public int winScore;
 	public string scene;
-
+	public AudioSource SoundMeat;
+	public AudioSource SoundGrass;
+	public AudioSource SoundCactus;
 
 	private int score;
 	private int count;
@@ -37,17 +39,20 @@ public class Score : MonoBehaviour {
 			score += ballValue;
 			UpdateScore ();	
 			//	Destroy (other.gameObject);
+			SoundMeat.Play();
 		}
 		if (other.tag == "grass") {
 			score -= ballValue;
 			UpdateScore ();	
 			//	Destroy (other.gameObject);
+			SoundGrass.Play();
 		}
 
 	} 
 	void OnCollisionEnter2D(Collision2D coll) {
 		if (coll.gameObject.tag == "cactus") {
 			heart -= 10;
+			SoundCactus.Play ();
 		}
 
 		if(heart <= 0 ){
