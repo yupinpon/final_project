@@ -77,7 +77,7 @@ public class Score : MonoBehaviour {
 
 	void UpdateScore () {
 		StartCoroutine ("TimeScrip");
-		scoreText.text = "Score "+winScore+" : " + score;
+		scoreText.text = " "+winScore+" : " + score;
 	
 	}
 
