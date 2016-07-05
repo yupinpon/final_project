@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 
 public class Player : MonoBehaviour {
@@ -21,6 +22,8 @@ public class Player : MonoBehaviour {
 		_anim = GetComponent<Animator> ();
 	
 	}
+
+
 	
 	// Update is called once per frame
 	void Update () {
@@ -43,6 +46,7 @@ public class Player : MonoBehaviour {
 		RaycastHit2D hitInfo = Physics2D.Linecast (startPos.position,endPos.position,groundLayer.value);
 
 		Debug.DrawLine (startPos.position, endPos.position);
+
 		if (hitInfo != null) {
 			
 			_anim.SetBool ("Jump",false);
@@ -53,9 +57,28 @@ public class Player : MonoBehaviour {
 			_anim.SetBool("Jump",true);
 			_canJump = false;
 			_myRigidbody.velocity = new Vector2(_myRigidbody.velocity.x,10);
+		}
 
 
 		}
-		}
+	public void MoveJump()
+	{
+		_anim.Play ("Jump");
+		_myRigidbody.velocity = new Vector2(_myRigidbody.velocity.x,10);
 	}
 
+
+	public void MoveRight()
+	{
+		_facingRight = false;
+		transform.rotation = Quaternion.Euler (transform.rotation.x, 180, transform.rotation.z);
+	}
+
+
+	public void MoveLeft()
+	{
+		_anim.Play ("move");
+		transform.rotation = Quaternion.Euler (transform.rotation.x, 180, transform.rotation.z);
+
+	}
+}
