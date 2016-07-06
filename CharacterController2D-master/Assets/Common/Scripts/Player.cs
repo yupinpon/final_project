@@ -14,7 +14,8 @@ public class Player : MonoBehaviour {
 	public Transform startPos;
 	public Transform endPos;
 	public LayerMask groundLayer;
-
+	public float move;
+	public bool CheckButton;
 
 	// Use this for initialization
 	void Start () {
@@ -22,15 +23,19 @@ public class Player : MonoBehaviour {
 		_anim = GetComponent<Animator> ();
 	
 	}
-
-
+		
 	
 	// Update is called once per frame
 	void Update () {
-		float move = Input.GetAxisRaw("Horizontal");
-		_anim.SetFloat ("Speed", Mathf.Abs( move));
-		_myRigidbody.velocity = new Vector2 (move * speed, _myRigidbody.velocity.y);
-	
+		
+		if (CheckButton == false)
+		{
+			move = Input.GetAxisRaw ("Horizontal");
+		}
+			_anim.SetFloat ("Speed", Mathf.Abs (move));
+			_myRigidbody.velocity = new Vector2 (move * speed, _myRigidbody.velocity.y);
+		
+	//	Debug.Log (move);
 		if (_facingRight == true && move < 0)
 		{
 			_facingRight = false;
@@ -58,9 +63,11 @@ public class Player : MonoBehaviour {
 			_canJump = false;
 			_myRigidbody.velocity = new Vector2(_myRigidbody.velocity.x,10);
 		}
+	}
 
 
-		}
+
+	//button------------
 	public void MoveJump()
 	{
 		_anim.Play ("Jump");
@@ -69,16 +76,21 @@ public class Player : MonoBehaviour {
 
 
 	public void MoveRight()
+		{
+		CheckButton = true;
+		 move = 1;
+		}
+	public void MoveUpRight()
 	{
-		_facingRight = false;
-		transform.rotation = Quaternion.Euler (transform.rotation.x, 180, transform.rotation.z);
+		CheckButton = false;
+		move = 0;
 	}
-
 
 	public void MoveLeft()
-	{
-		_anim.Play ("move");
-		transform.rotation = Quaternion.Euler (transform.rotation.x, 180, transform.rotation.z);
 
-	}
+	   {	
+		CheckButton = true;	
+		move = -1;
+		}
+
 }
