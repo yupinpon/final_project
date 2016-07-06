@@ -4,8 +4,8 @@ using System.Collections;
 
 public class ScoreScence5 : MonoBehaviour {
 
-	public Text scoreText;
-	public Text GameOverText;
+	public Text ScoreSumText;
+	public Text ScoreText;
 	public Text BestScoreOver;
 
 	private int score =0 ;
@@ -15,8 +15,8 @@ public class ScoreScence5 : MonoBehaviour {
 		if(collider.gameObject.tag == "Score")
 		{
 			score++;
-			scoreText.text = score.ToString();
-			GameOverText.text = " " + score;
+			ScoreSumText.text = score.ToString();
+			ScoreText.text = " " + score;
 		}
 
 	}
