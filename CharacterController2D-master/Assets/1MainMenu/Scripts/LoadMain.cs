@@ -8,5 +8,6 @@ public class LoadMain : MonoBehaviour {
 
 	{	
 		Application.LoadLevel("ChooseAnimal");
+		Debug.Log ("กดปุ่มแล้วนะ");
 	}
 }

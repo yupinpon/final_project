@@ -9,5 +9,8 @@ public class LoadScene_Tiger : MonoBehaviour {
 
 	{	
 		Application.LoadLevel("Scene1_Tiger");
+		Debug.Log ("Scene1_Tiger");
 	}
+
 }
+

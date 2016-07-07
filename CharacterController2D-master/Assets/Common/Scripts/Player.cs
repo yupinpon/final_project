@@ -35,7 +35,7 @@ public class Player : MonoBehaviour {
 			_anim.SetFloat ("Speed", Mathf.Abs (move));
 			_myRigidbody.velocity = new Vector2 (move * speed, _myRigidbody.velocity.y);
 		
-	//	Debug.Log (move);
+	//Debug.Log (move);
 		if (_facingRight == true && move < 0)
 		{
 			_facingRight = false;
